@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/notion-icons/0.3.1/notion-icons.min.css" integrity="sha512-y5zIXtbVZmk5GkGwvnDZunzRqKwtbDAtNj2A+6uB3JKWomq7wH8xuc8r7INAHgtxigxipSd7cDt7C/abWTW+ow==" crossorigin="anonymous" />
+
+        <style>
+            @font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+*{
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+       #skills {
+  text-align: center;
+  --bs-text-opacity: 1;
+    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+#skills-detail > div {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
+}
+
+#skills h3 {
+  margin-bottom: 10px;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills ul li {
+  margin-bottom: 5px;
+}
+#project-text {
+  text-align: left;
+}
+
+#project-text li {
+  display: block;
+  margin-bottom: 10px;
+}
+.image-info-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        /* height: 100vh; */
+    }
+
+    .image-info-container .image {
+        flex: 0 0 auto;
+        margin-right: 20px;
+    }
+    @media (max-width: 767px) {
+  .image-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-lg-42 {
+    width: 100%;
+  }
+}
+
+    a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1ABC9C;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+@media (max-width: 600px) {
+  a.button {
+    padding: 8px 16px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  a.button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+a.button:hover {
+  background-color: #ddd;
+}
+
+        </style>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>박태준 포트폴리오</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/title.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Web Developer</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="background-color: #1ABC9C;">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <!-- <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li> -->
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#aboutme">About me</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Skills</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#project">Project</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <!-- <img class="masthead-avatar mb-5" src="img/20230522 박태준 (취업블루).jpg" alt="..." /> -->
+                <!-- Masthead Heading-->
+        
+                <h1 class="masthead-heading text-uppercase mb-0">Web developer</h1> <br>
+                <h1 class="masthead-heading text-uppercase mb-0">portfolio</h1>
+                <!-- Icon Divider-->
+                <!-- <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                    
+                </div> -->
+                <br>
+                <br><br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br><br><br><br>
+                </div>
+                <!-- Masthead Subheading-->
+            </div>
+        </header>
+        <!-- About me section-->
+        <section class="page-section text-white mb-0" id="aboutme">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">About me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <!-- <div>
+                <img class="masthead-avatar mb-5" src="img/20230522 박태준 (취업블루).jpg" alt="박태준 사진" />
+                    <div class="row" style="color: #2c3e50;">
+                        <div class="col-lg-4 ms-auto">
+                        <p class="lead">이름 : 박태준</p>
+                        <p class="lead">나이 : 27세 (1997. 10. 18.)</p>
+                        <p class="lead">학력 : 경남공업고등학교 건축과 졸업</p>
+                        <p class="lead">주소 : 부산광역시 남구</p>
+                    </div>
+                    <div class="col-lg-4 me-auto">
+                        <p class="lead">
+                            수료 내역 : 2022. 11. 28. ~ 2023. 05. 18. <br>
+                            아이티윌 부산교육센터 프로젝트 기반 핀테크 서비스 자바 개발자 과정 수료
+                        </p>
+                        <p class="lead">
+                            연락처 : 010-5538-4863
+                        </p>
+                        <p class="lead">
+                            E-mail : a01055384863@gmail.com
+                        </p>
+                    </div>
+                    </div>
+                </div> -->
+                <div>
+                    <div class="image-info-container">
+                        <div class="image">
+                            <img class="masthead-avatar mb-5" src="img/20230522 박태준 (취업블루).jpg" alt="박태준 사진" />
+                        </div>
+                        <div class="row" style="color: #2c3e50;">
+                            <div class="col-lg-42" style="width: max-content;">
+                                <p class="lead">이름 : 박태준</p>
+                                <p class="lead">나이 : 27세 (1997. 10. 18.)</p>
+                                <p class="lead">학력 : 경남공업고등학교 건축과 졸업</p>
+                                <p class="lead">주소 : 부산광역시 남구</p>
+                            <!-- </div>
+                            <div class="col-lg-4 me-auto"> -->
+                                <p class="lead">
+                                    수료 내역 : 2022. 11. 28. ~ 2023. 05. 18. <br>
+                                    아이티윌 부산교육센터 프로젝트 기반 <br>핀테크 서비스 자바 개발자 과정 수료
+                                </p>
+                                <p class="lead">
+                                    연락처 : 010-5538-4863
+                                </p>
+                                <p class="lead">
+                                    E-mail : a01055384863@gmail.com
+                                </p>
+                                <a href="https://synonymous-process-602.notion.site/Back-End-Web-Developer-f8e7588f20c44a8cb58e218c0199c256?pvs=4" class="button">
+                                    이력 보러가기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills Section-->
+        <section class="page-section text-white mb-0" id="skills">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Skills</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div id="skills-detail">
+                <div class="back-end">
+                    <h3>Back-End</h3>
+                    <ul>
+                      <li>Java</li>
+                      <li>Spring Framework</li>
+                      <li>Mybatis</li>
+                    </ul>
+                  </div>
+                  <div class="front-end">
+                    <h3>Front-End</h3>
+                    <ul>
+                      <li>HTML5/CSS3</li>
+                      <li>JavaScript</li>
+                      <li>jQuery</li>
+                      <li>Ajax</li>
+                      <li>JSP</li>
+                    </ul>
+                  </div>
+                  <div class="database">
+                    <h3>DataBase</h3>
+                    <ul>
+                      <li>MySQL</li>
+                      <li>Oracle</li>
+                    </ul>
+                  </div>
+                  <div class="tools">
+                    <h3>Tools</h3>
+                    <ul>
+                      <li>Eclipes(STS)</li>
+                      <li>MySQL Workbench</li>
+                      <li>Oracle SQL Developer</li>
+                    </ul>
+                  </div>
+                  <div class="server">
+                    <h3>Server</h3>
+                    <ul>
+                      <li>Apache Tomcat 9.0</li>
+                      <li>Cafe24</li>
+                    </ul>
+                  </div>
+                  <div class="collaboration_tool">
+                    <h3>Collaboration Tool</h3>
+                    <ul>
+                      <li>Github</li>
+                      <li>Slack</li>
+                      <li>Notion</li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+        </section>
+<br>
+        <!-- Project Section-->
+        <section class="page-section portfolio" id="project">
+            <div class="container">
+                <!-- Project Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Project</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1" style="height: 300px;">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/1차 프로젝트 메인.png" alt="..." style="height: 100%;"/>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2" style="height: 300px;">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/2차 프로젝트 메인.png" alt="..." style="height: 100%;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <img class="img-fluid rounded mb-5" src="img/발표.jpg" alt="프로젝트 발표 사진" />
+                        <h4>"협업을 중요시하며, 문제 해결에 열정적이며 적극적으로 팀원들과 소통하며 
+                            성장하는 웹 개발자, 박태준이 되겠습니다."</h4>
+                            <a href="https://github.com/Taejun33312" class="button"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" 
+                                class="svg-inline--fa fa-github " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path fill="currentColor" 
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                                    </path>
+                                </svg>
+                            Github
+                            </a>
+                            <a href="https://www.canva.com/design/DAFjtNdVFo0/pAFHIc5U-SVtEklYxbdb6A/edit?utm_content=DAFjtNdVFo0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="button">포트폴리오 PPT 보러가기</a>
+                            <a href="https://www.notion.so/itwill-e90f4098171d40e295e595bb3fe94922?pvs=4" class="button">
+                                Notion
+                              </a>
+                              
+                              
+                              
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- footer-->
+        <footer>
+        <div class="copyright py-4 text-center text-white">
+            <address>
+                본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br>
+                © 2023 Park Taejun. All Rights Reserved.
+              </address>
+        </div>
+    </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">HelloMovie</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                        <button class="btn btn-primary" onclick="location.href='http://itwillbs22.cafe24.com/HelloMovie'">
+                                            사이트 바로가기
+                                        </button>
+                                    </h2>
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="img/1차 프로젝트 메인.png" alt="1차 프로젝트 메인 이미지" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4" style="font-size: 24px;">이 프로젝트는 영화 예매를 위한 웹 사이트로, 간편 로그인과 가입, 지도 API를 통한 영화관 정보 제공, 영화 API를 활용한 영화 정보 제공, Ajax를 활용한 예매, 예매 횟수에 따른 등급 할인, 영화 리뷰 작성 등 다양한 기능을 제공합니다. 사용자들은 원하는 영화와 영화관을 찾고 간편하게 예매하며 결제할 수 있습니다.</p>
+                                    <ul id="project-text" style="font-size: 20px;">
+                                        <li><span style="font-weight: bold; color: darkslategray;">개발 기간</span>  2023. 02. 22 ~ 2023. 03. 29. (5주)</li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">플랫폼</span>  Web</li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">개발 인원</span>  6명<span style="color: red;">(팀장)</span></li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">담당 역할</span>  <br>
+                                            극장 페이지 - 헤더 극장 메뉴 <span style="color: red;">(기여도 100%)</span> <br> 
+                                            상세 페이지 <span style="color: red;">(기여도 100%)</span> <br>
+                                            예매 - 예매 페이지 <span style="color: red;">(기여도 100%)</span> <br>
+                                            서비스 기획 및 방향성 설정 <span style="color: red;">(기여도 80%)</span>
+                                        </li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">개발 언어</span>  Java, JavaScript, HTML/CSS</li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">개발 서버</span>  Apache Tomcat 9.0, cafe24</li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">데이터베이스</span>  MySQL</li>
+                                        <li><span style="font-weight: bold; color: darkslategray;">통합 개발 환경</span>  Eclipes</li>
+                                        <li>
+                                            <a href="https://github.com/Taejun33312/HelloMovie-">
+                                                <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">
+                                                    Github
+                                                </span>
+                                            </a>
+                                            <a href="https://synonymous-process-602.notion.site/698bae102bdc451ea00b645461ae865b?v=1440eac4560f4c18a5c1a1b5c3d7ec03">
+                                                <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">DB 설계</span>
+                                            </a>
+                                            <a href="https://www.canva.com/design/DAFf2COXJ4Y/vu6I3NxLMYNhK8xXByh7Cg/edit?utm_content=DAFf2COXJ4Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+                                                <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">발표 PPT</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ERD</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <img class="img-fluid rounded mb-5" src="img/1차 프로젝트 ERD.png" alt="1차 프로젝트 ERD 이미지" />
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">기능 명세서</h2>
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p>내용이 궁금하시다면 이미지를 클릭해주세요!</p>
+                                    <a href="https://docs.google.com/spreadsheets/d/1jkehWBea2wNlP5PnmjaSZoVt0Hzykj2Nf2eRX28868A/edit?usp=sharing"> 
+                                        <img class="img-fluid rounded mb-5" src="img/1차 프로젝트 기능 명세서.png" alt="1차 프로젝트 기능 명세서" /> 
+                                    </a>
+                                    <!-- <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">개발 기간</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">플랫폼</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">개발 인원</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">담당 역할</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">개발 언어</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">DATABASE</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p>
+                                    <p class="mb-4"><span style="font-weight: bold; color: darkslategray;">IDE</span> : 2023. 02. 22 ~ 2023. 03. 29. (5주)</p> -->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">WolClass</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                                        <button class="btn btn-primary" onclick="location.href='http://itwillbs22.cafe24.com/'">
+                                            사이트 바로가기
+                                        </button>
+                                    </h2>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="img/2차 프로젝트 메인.png" alt="2차 프로젝트 메인 이미지" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4" style="font-size: 24px;">이 프로젝트는 반려동물과 함께 사는 가구의 증가에 맞춰, 반려동물 체험프로그램 예약을 위한 플랫폼입니다. 지도 API를 활용하여 가까운 프로그램을 쉽게 예약하고, 포트원 API를 통해 결제와 환불이 가능합니다. 멤버십 서비스로 할인 기능을 제공하며, 예약 시 알림 기능과 리뷰 기능도 제공됩니다.</p>
+                                        <ul id="project-text" style="font-size: 20px;">
+                                            <li><span style="font-weight: bold; color: darkslategray;">개발 기간</span>  2023. 04. 13. ~ 2023. 05. 18. (5주)</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">플랫폼</span>  Web</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">개발 인원</span>  5명</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">담당 역할</span>  <br>
+                                                메인 - 헤더, 푸터 및 메인 페이지, 알림, 추천 기능 <span style="color: red;">(기여도 100%)</span> <br> 
+                                                등록 페이지 <span style="color: red;">(기여도 100%)</span> <br>
+                                            </li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">개발 언어</span>  Java, JavaScript, HTML/CSS</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">개발 서버</span>  Apache Tomcat 9.0, cafe24</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">데이터베이스</span>  MySQL</li>
+                                            <li><span style="font-weight: bold; color: darkslategray;">통합 개발 환경</span>  Spring Tool Suite 4</li>
+                                            <li>
+                                                <a href="https://github.com/Taejun33312/wolclass">
+                                                    <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">
+                                                        Github
+                                                    </span>
+                                                </a>
+                                                <a href="https://frequent-bench-4d9.notion.site/b72803c0c7744761a26b96b92634e2f4?v=743a2422f15244a79643ae8e7770304c">
+                                                    <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">
+                                                        일정 관리
+                                                    </span>
+                                                </a>
+                                                <a href="https://docs.google.com/spreadsheets/d/1_YzB7rUJBVIBOR88_pyBQMCuyy7pvIPw8uwEQHxXJnc/edit?usp=sharing">
+                                                    <span style="font-weight: bold; color: darkslategray; margin-right: 5%;">
+                                                        테이블 정의서
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ERD</h2>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <img class="img-fluid rounded mb-5" src="img/2차 프로젝트 ERD.png" alt="2차 프로젝트 ERD 이미지" />
+
+                                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">요구사항 정의서</h2>
+                                        <div class="divider-custom">
+                                            <div class="divider-custom-line"></div>
+                                            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                            <div class="divider-custom-line"></div>
+                                        </div>
+                                        <p>내용이 궁금하시다면 이미지를 클릭해주세요!</p>
+                                        <a href="https://docs.google.com/document/d/1_JYkh_OLF8cuO3kLDSrQhIag_76cgm5Ve6XcmI-Vd_Q/edit?usp=sharing"> 
+                                            <img class="img-fluid rounded mb-5" src="img/2차 프로젝트 요구사항 정의서.png" alt="2차 프로젝트 요구사항 정의서" /> 
+                                        </a>
+                                        <br>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
